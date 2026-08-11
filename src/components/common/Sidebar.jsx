@@ -21,7 +21,7 @@ const Sidebar = () => {
         
         <div className="nav-section">MANAGEMENT</div>
         
-        <NavLink to="/invoices" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+        <NavLink to="/invoices" end className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
           <FileText size={20} />
           <span>All Invoices</span>
         </NavLink>
