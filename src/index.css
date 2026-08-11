@@ -124,9 +124,9 @@ body {
 .main-content {
   flex: 1;
   padding: 2rem;
-  margin-left: 280px; /* Sidebar width (250) + left offset (1rem) + spacing */
+  margin-left: 250px; /* Sidebar width */
   transition: all 0.3s ease;
-  width: calc(100% - 280px);
+  width: calc(100% - 250px);
 }
 
 /* Responsive Media Queries */
