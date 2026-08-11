@@ -58,7 +58,7 @@ const InvoiceDetails = () => {
 
   return (
     <div>
-      <div className="no-print" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+      <div className="no-print" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <Link to="/invoices" className="btn btn-secondary" style={{ padding: '0.5rem' }}>
             <ArrowLeft size={18} />
@@ -76,11 +76,11 @@ const InvoiceDetails = () => {
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <div className="glass-panel" style={{ padding: '0', width: '100%', maxWidth: '900px', backgroundColor: 'white', overflowX: 'auto', overflowY: 'hidden' }}>
+        <div className="glass-panel" style={{ padding: '0', width: '100%', maxWidth: '900px', backgroundColor: 'white', overflow: 'hidden' }}>
           
-          <div ref={componentRef} style={{ 
+          <div ref={componentRef} className="invoice-print-container" style={{ 
             padding: '40px', 
-            minWidth: '800px', /* Ensure it doesn't squish too much on mobile */
+            minWidth: '800px', /* Ensure it doesn't squish too much on desktop */
             backgroundColor: 'white', 
             color: textColor, 
             fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',

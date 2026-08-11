@@ -150,6 +150,16 @@ body {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
   }
+  
+  .invoice-print-container {
+    zoom: 0.45; /* Scales down the 800px PDF container to fit mobile screen without horizontal scrolling */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .invoice-print-container {
+    zoom: 0.38;
+  }
 }
 
 /* Print Styles */
